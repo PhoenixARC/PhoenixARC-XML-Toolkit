@@ -1,0 +1,1 @@
+"./tools/convert/mp3/ffmpeg.exe" -loop 1 -i "./tools/convert/mp3/cover.jpg" -i "./tools/convert/mp3/temp.mp3" -c:a aac -ar 48000 -c:v h264 -pix_fmt yuv420p -vf "fps=24/1.001" -shortest -strict -2 "./tools/convert/mp3/output.m4a"

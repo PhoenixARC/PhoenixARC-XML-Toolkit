@@ -1,0 +1,17 @@
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\bin\Release\PhoenixARC XML Toolkit.exe.config
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\bin\Release\PhoenixARC XML Toolkit.exe
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\bin\Release\PhoenixARC XML Toolkit.pdb
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\bin\Release\MetroFramework.Design.dll
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\bin\Release\MetroFramework.dll
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\bin\Release\MetroFramework.Fonts.dll
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\obj\Release\PhoenixARC_XML_Toolkit.Form1.resources
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\obj\Release\PhoenixARC_XML_Toolkit.Properties.Resources.resources
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\obj\Release\PhoenixARC XML Toolkit.csproj.GenerateResource.cache
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\obj\Release\PhoenixARC XML Toolkit.csproj.CoreCompileInputs.cache
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\obj\Release\PhoenixARC XML Toolkit.csproj.CopyComplete
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\obj\Release\PhoenixARC XML Toolkit.exe
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\obj\Release\PhoenixARC XML Toolkit.pdb
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\obj\Release\PhoenixARC XML Toolkit.csprojAssemblyReference.cache
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\bin\Release\FluentFTP.dll
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\bin\Release\Zhuang.FTP.dll
+C:\Users\PhoenixARC\source\repos\PhoenixARC XML Toolkit\bin\Release\FluentFTP.xml
