@@ -135,6 +135,13 @@
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.metroButton21 = new MetroFramework.Controls.MetroButton();
+            this.listBox9 = new System.Windows.Forms.ListBox();
+            this.listBox8 = new System.Windows.Forms.ListBox();
+            this.listBox7 = new System.Windows.Forms.ListBox();
+            this.listBox6 = new System.Windows.Forms.ListBox();
+            this.listBox5 = new System.Windows.Forms.ListBox();
+            this.metroButton20 = new MetroFramework.Controls.MetroButton();
             this.metroRadioButton12 = new MetroFramework.Controls.MetroRadioButton();
             this.metroLabel19 = new MetroFramework.Controls.MetroLabel();
             this.metroRadioButton6 = new MetroFramework.Controls.MetroRadioButton();
@@ -173,12 +180,14 @@
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
             this.metroLabel21 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel27 = new MetroFramework.Controls.MetroLabel();
-            this.metroButton20 = new MetroFramework.Controls.MetroButton();
-            this.listBox5 = new System.Windows.Forms.ListBox();
-            this.listBox6 = new System.Windows.Forms.ListBox();
-            this.listBox7 = new System.Windows.Forms.ListBox();
-            this.listBox8 = new System.Windows.Forms.ListBox();
-            this.listBox9 = new System.Windows.Forms.ListBox();
+            this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.metroButton26 = new MetroFramework.Controls.MetroButton();
+            this.metroButton27 = new MetroFramework.Controls.MetroButton();
+            this.metroButton28 = new MetroFramework.Controls.MetroButton();
+            this.metroButton41 = new MetroFramework.Controls.MetroButton();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.listBox10 = new System.Windows.Forms.ListBox();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
@@ -193,6 +202,7 @@
             this.metroTabPage4.SuspendLayout();
             this.metroPanel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
+            this.metroTabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -201,9 +211,10 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Controls.Add(this.metroTabPage4);
+            this.metroTabControl1.Controls.Add(this.metroTabPage5);
             this.metroTabControl1.Location = new System.Drawing.Point(23, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.SelectedIndex = 4;
             this.metroTabControl1.Size = new System.Drawing.Size(997, 481);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Magenta;
             this.metroTabControl1.TabIndex = 0;
@@ -2147,6 +2158,7 @@
             // 
             // metroTabPage2
             // 
+            this.metroTabPage2.Controls.Add(this.metroButton21);
             this.metroTabPage2.Controls.Add(this.listBox9);
             this.metroTabPage2.Controls.Add(this.listBox8);
             this.metroTabPage2.Controls.Add(this.listBox7);
@@ -2186,6 +2198,71 @@
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
+            // 
+            // metroButton21
+            // 
+            this.metroButton21.Location = new System.Drawing.Point(23, 249);
+            this.metroButton21.Name = "metroButton21";
+            this.metroButton21.Size = new System.Drawing.Size(75, 23);
+            this.metroButton21.TabIndex = 49;
+            this.metroButton21.Text = "metroButton21";
+            this.metroButton21.UseSelectable = true;
+            this.metroButton21.Click += new System.EventHandler(this.MetroButton21_Click);
+            // 
+            // listBox9
+            // 
+            this.listBox9.FormattingEnabled = true;
+            this.listBox9.Location = new System.Drawing.Point(517, 31);
+            this.listBox9.Name = "listBox9";
+            this.listBox9.Size = new System.Drawing.Size(252, 381);
+            this.listBox9.TabIndex = 48;
+            this.listBox9.Visible = false;
+            // 
+            // listBox8
+            // 
+            this.listBox8.FormattingEnabled = true;
+            this.listBox8.Location = new System.Drawing.Point(249, 31);
+            this.listBox8.Name = "listBox8";
+            this.listBox8.Size = new System.Drawing.Size(252, 381);
+            this.listBox8.TabIndex = 47;
+            this.listBox8.Visible = false;
+            // 
+            // listBox7
+            // 
+            this.listBox7.FormattingEnabled = true;
+            this.listBox7.Location = new System.Drawing.Point(649, 3);
+            this.listBox7.Name = "listBox7";
+            this.listBox7.Size = new System.Drawing.Size(252, 381);
+            this.listBox7.TabIndex = 46;
+            this.listBox7.Visible = false;
+            // 
+            // listBox6
+            // 
+            this.listBox6.FormattingEnabled = true;
+            this.listBox6.Location = new System.Drawing.Point(381, 3);
+            this.listBox6.Name = "listBox6";
+            this.listBox6.Size = new System.Drawing.Size(252, 381);
+            this.listBox6.TabIndex = 45;
+            this.listBox6.Visible = false;
+            // 
+            // listBox5
+            // 
+            this.listBox5.FormattingEnabled = true;
+            this.listBox5.Location = new System.Drawing.Point(123, 3);
+            this.listBox5.Name = "listBox5";
+            this.listBox5.Size = new System.Drawing.Size(252, 381);
+            this.listBox5.TabIndex = 44;
+            this.listBox5.Visible = false;
+            // 
+            // metroButton20
+            // 
+            this.metroButton20.Location = new System.Drawing.Point(23, 41);
+            this.metroButton20.Name = "metroButton20";
+            this.metroButton20.Size = new System.Drawing.Size(75, 23);
+            this.metroButton20.TabIndex = 43;
+            this.metroButton20.Text = "Add .PhoList";
+            this.metroButton20.UseSelectable = true;
+            this.metroButton20.Click += new System.EventHandler(this.MetroButton20_Click);
             // 
             // metroRadioButton12
             // 
@@ -2392,6 +2469,7 @@
             this.listBox4.Name = "listBox4";
             this.listBox4.Size = new System.Drawing.Size(252, 381);
             this.listBox4.TabIndex = 3;
+            this.listBox4.Visible = false;
             // 
             // listBox3
             // 
@@ -2400,6 +2478,7 @@
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(252, 381);
             this.listBox3.TabIndex = 3;
+            this.listBox3.Visible = false;
             // 
             // listBox2
             // 
@@ -2408,6 +2487,7 @@
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(252, 381);
             this.listBox2.TabIndex = 2;
+            this.listBox2.Visible = false;
             // 
             // metroTabPage3
             // 
@@ -2631,59 +2711,89 @@
             this.metroLabel27.TabIndex = 3;
             this.metroLabel27.Text = "Current Version:";
             // 
-            // metroButton20
+            // metroTabPage5
             // 
-            this.metroButton20.Location = new System.Drawing.Point(23, 41);
-            this.metroButton20.Name = "metroButton20";
-            this.metroButton20.Size = new System.Drawing.Size(75, 23);
-            this.metroButton20.TabIndex = 43;
-            this.metroButton20.Text = "Add .PhoList";
-            this.metroButton20.UseSelectable = true;
-            this.metroButton20.Click += new System.EventHandler(this.MetroButton20_Click);
+            this.metroTabPage5.Controls.Add(this.listBox10);
+            this.metroTabPage5.Controls.Add(this.metroButton41);
+            this.metroTabPage5.Controls.Add(this.metroButton28);
+            this.metroTabPage5.Controls.Add(this.metroButton27);
+            this.metroTabPage5.Controls.Add(this.metroButton26);
+            this.metroTabPage5.Controls.Add(this.treeView1);
+            this.metroTabPage5.HorizontalScrollbarBarColor = true;
+            this.metroTabPage5.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage5.HorizontalScrollbarSize = 10;
+            this.metroTabPage5.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage5.Name = "metroTabPage5";
+            this.metroTabPage5.Size = new System.Drawing.Size(989, 439);
+            this.metroTabPage5.Style = MetroFramework.MetroColorStyle.Magenta;
+            this.metroTabPage5.TabIndex = 5;
+            this.metroTabPage5.Text = "metroTabPage5";
+            this.metroTabPage5.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroTabPage5.VerticalScrollbarBarColor = true;
+            this.metroTabPage5.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage5.VerticalScrollbarSize = 10;
             // 
-            // listBox5
+            // treeView1
             // 
-            this.listBox5.FormattingEnabled = true;
-            this.listBox5.Location = new System.Drawing.Point(123, 3);
-            this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(252, 381);
-            this.listBox5.TabIndex = 44;
+            this.treeView1.BackColor = System.Drawing.Color.LightGray;
+            this.treeView1.Location = new System.Drawing.Point(31, 30);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(263, 358);
+            this.treeView1.TabIndex = 2;
             // 
-            // listBox6
+            // metroButton26
             // 
-            this.listBox6.FormattingEnabled = true;
-            this.listBox6.Location = new System.Drawing.Point(381, 3);
-            this.listBox6.Name = "listBox6";
-            this.listBox6.Size = new System.Drawing.Size(252, 381);
-            this.listBox6.TabIndex = 45;
-            this.listBox6.Visible = false;
+            this.metroButton26.Location = new System.Drawing.Point(41, 394);
+            this.metroButton26.Name = "metroButton26";
+            this.metroButton26.Size = new System.Drawing.Size(75, 23);
+            this.metroButton26.TabIndex = 3;
+            this.metroButton26.Text = "Add Form";
+            this.metroButton26.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton26.UseSelectable = true;
             // 
-            // listBox7
+            // metroButton27
             // 
-            this.listBox7.FormattingEnabled = true;
-            this.listBox7.Location = new System.Drawing.Point(649, 3);
-            this.listBox7.Name = "listBox7";
-            this.listBox7.Size = new System.Drawing.Size(252, 381);
-            this.listBox7.TabIndex = 46;
-            this.listBox7.Visible = false;
+            this.metroButton27.Location = new System.Drawing.Point(122, 394);
+            this.metroButton27.Name = "metroButton27";
+            this.metroButton27.Size = new System.Drawing.Size(75, 23);
+            this.metroButton27.TabIndex = 4;
+            this.metroButton27.Text = "Add Child";
+            this.metroButton27.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton27.UseSelectable = true;
             // 
-            // listBox8
+            // metroButton28
             // 
-            this.listBox8.FormattingEnabled = true;
-            this.listBox8.Location = new System.Drawing.Point(249, 31);
-            this.listBox8.Name = "listBox8";
-            this.listBox8.Size = new System.Drawing.Size(252, 381);
-            this.listBox8.TabIndex = 47;
-            this.listBox8.Visible = false;
+            this.metroButton28.Location = new System.Drawing.Point(203, 394);
+            this.metroButton28.Name = "metroButton28";
+            this.metroButton28.Size = new System.Drawing.Size(75, 23);
+            this.metroButton28.TabIndex = 5;
+            this.metroButton28.Text = "Remove";
+            this.metroButton28.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton28.UseSelectable = true;
             // 
-            // listBox9
+            // metroButton41
             // 
-            this.listBox9.FormattingEnabled = true;
-            this.listBox9.Location = new System.Drawing.Point(517, 31);
-            this.listBox9.Name = "listBox9";
-            this.listBox9.Size = new System.Drawing.Size(252, 381);
-            this.listBox9.TabIndex = 48;
-            this.listBox9.Visible = false;
+            this.metroButton41.Location = new System.Drawing.Point(3, 3);
+            this.metroButton41.Name = "metroButton41";
+            this.metroButton41.Size = new System.Drawing.Size(75, 23);
+            this.metroButton41.TabIndex = 50;
+            this.metroButton41.Text = "Open";
+            this.metroButton41.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton41.UseSelectable = true;
+            this.metroButton41.Click += new System.EventHandler(this.MetroButton41_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // listBox10
+            // 
+            this.listBox10.FormattingEnabled = true;
+            this.listBox10.Location = new System.Drawing.Point(402, 21);
+            this.listBox10.Name = "listBox10";
+            this.listBox10.ScrollAlwaysVisible = true;
+            this.listBox10.Size = new System.Drawing.Size(584, 394);
+            this.listBox10.TabIndex = 51;
             // 
             // Form1
             // 
@@ -2723,6 +2833,7 @@
             this.metroPanel11.ResumeLayout(false);
             this.metroPanel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
+            this.metroTabPage5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2879,6 +2990,15 @@
         private System.Windows.Forms.ListBox listBox6;
         private System.Windows.Forms.ListBox listBox5;
         private MetroFramework.Controls.MetroButton metroButton20;
+        private MetroFramework.Controls.MetroButton metroButton21;
+        private MetroFramework.Controls.MetroTabPage metroTabPage5;
+        private MetroFramework.Controls.MetroButton metroButton41;
+        private MetroFramework.Controls.MetroButton metroButton28;
+        private MetroFramework.Controls.MetroButton metroButton27;
+        private MetroFramework.Controls.MetroButton metroButton26;
+        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ListBox listBox10;
     }
 }
 

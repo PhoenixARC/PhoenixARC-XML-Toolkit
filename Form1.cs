@@ -312,11 +312,14 @@ namespace PhoenixARC_XML_Toolkit
 
         }
 
+
+        string text27 = "";
+
         private void MetroButton5_Click(object sender, EventArgs e)
         {
 
             OpenFileDialog OpenFileDialog1 = new OpenFileDialog();
-            OpenFileDialog1.Filter = "PhoeniXML Tempfile |*.PhoList";
+            OpenFileDialog1.Filter = "PhoeniXML Tempfile |*.PhoList| database file | db";
             OpenFileDialog1.FilterIndex = 1;
             if (OpenFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
@@ -674,6 +677,7 @@ namespace PhoenixARC_XML_Toolkit
 
         private void MetroButton6_Click(object sender, EventArgs e)
         {
+
             string folderdir = metroLabel15.Text;
             string type = metroLabel19.Text;
             if (metroRadioButton10.Checked == true)
@@ -693,6 +697,7 @@ namespace PhoenixARC_XML_Toolkit
                     string sha256 = options[6];
                     string description = options[7];
                     string uploader = options[8];
+                    this.text27 = options[5];
 
 
 
@@ -2655,6 +2660,294 @@ namespace PhoenixARC_XML_Toolkit
                 
             }
         }
+
+        private void MetroButton21_Click(object sender, EventArgs e)
+        {
+            foreach (string item in listBox2.Items)
+            {
+
+                string text = this.text27.Trim();
+                if (text.Length == 0)
+                {
+                    return;
+                }
+                int num = text.IndexOf('/');
+                if (-1 != num)
+                {
+                    text = text.Substring(num);
+                }
+                num = text.IndexOf('\\');
+                if (-1 != num)
+                {
+                    text = text.Substring(num);
+                }
+                string text2;
+                bool flag;
+                if (text.Length == 0 || text.EndsWith(".rap", StringComparison.OrdinalIgnoreCase))
+                {
+                    text2 = AppDomain.CurrentDomain.BaseDirectory + "\\exdata";
+                    flag = false;
+                }
+                else
+                {
+                    text2 = AppDomain.CurrentDomain.BaseDirectory + "\\fixes";
+                    flag = true;
+                }
+                if (!Directory.Exists(text2))
+                {
+                    Directory.CreateDirectory(text2);
+                }
+                try
+                {
+                    string hex = this.text27;
+                    File.WriteAllBytes(text2 + "\\" + text, Form1.StringToByteArray(hex));
+                    bool flag2 = true;
+                    if (flag)
+                    {
+                        if (flag2)
+                        {
+                            MessageBox.Show("FIX", "FIX has been saved to fixes!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("FIX", "Couldn't save Fix!");
+                        }
+                    }
+                    else if (flag2)
+                    {
+                        MessageBox.Show("RAP", "Rap has been saved to exdata!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("rap", "Couldn't save Rap!");
+                    }
+                }
+                catch
+                {
+
+                    MessageBox.Show("Warning", "No rap/fix available!");
+                }
+            }
+            foreach (string item in listBox3.Items)
+            {
+
+                string text = this.text27.Trim();
+                if (text.Length == 0)
+                {
+                    return;
+                }
+                int num = text.IndexOf('/');
+                if (-1 != num)
+                {
+                    text = text.Substring(num);
+                }
+                num = text.IndexOf('\\');
+                if (-1 != num)
+                {
+                    text = text.Substring(num);
+                }
+                string text2;
+                bool flag;
+                if (text.Length == 0 || text.EndsWith(".rap", StringComparison.OrdinalIgnoreCase))
+                {
+                    text2 = AppDomain.CurrentDomain.BaseDirectory + "\\exdata";
+                    flag = false;
+                }
+                else
+                {
+                    text2 = AppDomain.CurrentDomain.BaseDirectory + "\\fixes";
+                    flag = true;
+                }
+                if (!Directory.Exists(text2))
+                {
+                    Directory.CreateDirectory(text2);
+                }
+                try
+                {
+                    string hex = this.text27;
+                    File.WriteAllBytes(text2 + "\\" + text, Form1.StringToByteArray(hex));
+                    bool flag2 = true;
+                    if (flag)
+                    {
+                        if (flag2)
+                        {
+                            MessageBox.Show("FIX", "FIX has been saved to fixes!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("FIX", "Couldn't save Fix!");
+                        }
+                    }
+                    else if (flag2)
+                    {
+                        MessageBox.Show("RAP", "Rap has been saved to exdata!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("rap", "Couldn't save Rap!");
+                    }
+                }
+                catch
+                {
+
+                    MessageBox.Show("Warning", "No rap/fix available!");
+                }
+            }
+            foreach (string item in listBox4.Items)
+            {
+
+                string text = this.text27.Trim();
+                if (text.Length == 0)
+                {
+                    return;
+                }
+                int num = text.IndexOf('/');
+                if (-1 != num)
+                {
+                    text = text.Substring(num);
+                }
+                num = text.IndexOf('\\');
+                if (-1 != num)
+                {
+                    text = text.Substring(num);
+                }
+                string text2;
+                bool flag;
+                if (text.Length == 0 || text.EndsWith(".rap", StringComparison.OrdinalIgnoreCase))
+                {
+                    text2 = AppDomain.CurrentDomain.BaseDirectory + "\\exdata";
+                    flag = false;
+                }
+                else
+                {
+                    text2 = AppDomain.CurrentDomain.BaseDirectory + "\\fixes";
+                    flag = true;
+                }
+                if (!Directory.Exists(text2))
+                {
+                    Directory.CreateDirectory(text2);
+                }
+                try
+                {
+                    string hex = this.text27;
+                    File.WriteAllBytes(text2 + "\\" + text, Form1.StringToByteArray(hex));
+                    bool flag2 = true;
+                    if (flag)
+                    {
+                        if (flag2)
+                        {
+                            MessageBox.Show("FIX", "FIX has been saved to fixes!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("FIX", "Couldn't save Fix!");
+                        }
+                    }
+                    else if (flag2)
+                    {
+                        MessageBox.Show("RAP", "Rap has been saved to exdata!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("rap", "Couldn't save Rap!");
+                    }
+                }
+                catch
+                {
+
+                    MessageBox.Show("Warning", "No rap/fix available!");
+                }
+            }
+
+        }
+
+        private static byte[] StringToByteArray(string hex)
+        {
+            return (from x in Enumerable.Range(0, hex.Length)
+                    where x % 2 == 0
+                    select Convert.ToByte(hex.Substring(x, 2), 16)).ToArray<byte>();
+        }
+
+        private void create_rap(int idx)
+        {
+            try
+            {
+                string text = this.text27.Trim();
+                if (text.Length != 0)
+                {
+                    int num = text.IndexOf('/');
+                    if (-1 != num)
+                    {
+                        text = text.Substring(num);
+                    }
+                    num = text.IndexOf('\\');
+                    if (-1 != num)
+                    {
+                        text = text.Substring(num);
+                    }
+                    string text2;
+                    if (text.Length == 0 || text.EndsWith(".rap", StringComparison.OrdinalIgnoreCase))
+                    {
+                        text2 = AppDomain.CurrentDomain.BaseDirectory + "\\exdata";
+                    }
+                    else
+                    {
+                        text2 = AppDomain.CurrentDomain.BaseDirectory + "\\fixes";
+                    }
+                    if (!Directory.Exists(text2))
+                    {
+                        Directory.CreateDirectory(text2);
+                    }
+                    try
+                    {
+                        string hex = this.text27;
+                        File.WriteAllBytes(text2 + "\\" + text, Form1.StringToByteArray(hex));
+                    }
+                    catch
+                    {
+                    }
+                }
+            }
+            catch
+            {
+            }
+        }
+
+        private void MetroButton41_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog OpenFileDialog1 = new OpenFileDialog();
+            OpenFileDialog1.Filter = "PS3 XML |*.xml";
+            OpenFileDialog1.FilterIndex = 1;
+            List<string> newlist = new List<string>();
+            if (OpenFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                string STR = System.IO.File.ReadAllText(OpenFileDialog1.FileName);
+
+                string STRFirst = "<Table Key";
+
+                string STRLast = "</Table>";
+
+                string FinalString;
+
+
+
+                try
+                {
+                    int Pos1 = STR.IndexOf(STRFirst) + STRFirst.Length;
+
+                    int Pos2 = STR.IndexOf(STRLast);
+
+                    FinalString = STR.Substring(Pos1, Pos2 - Pos1);
+
+                    listBox10.Items.Add(FinalString);
+                }
+                catch (Exception)
+                {
+
+                }
+            }
+        }
+            }
     }
-}
+
 
